@@ -81,7 +81,14 @@ module.exports = function (/* ctx */) {
     devServer: {
       https: false,
       port: 8080,
-      open: true // opens browser window automatically
+      open: true, // opens browser window automatically
+      proxy: [
+        {
+          context: ['/'],
+          target: 'https://athon-tech-ps.herokuapp.com/',
+          changeOrigin: true
+        }
+      ]
     },
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework
