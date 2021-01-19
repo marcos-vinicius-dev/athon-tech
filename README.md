@@ -70,7 +70,7 @@ Os **commits** do **Git** seguem as [mensagens de commit semântico](https://gis
 	- Perde a capacidade da utilização de um **[Botão CTA — Call to Action](https://medium.com/tableless/botoes-em-ui-design-e8e8a7473747)**, que sua principal função é chamar atenção do usuário.
 
 **Detalhes do crime**
-Botão de delete é apresentado onde costuma seja apresentado o botão de fechar modal.
+Botão de delete é apresentado onde costuma ser apresentado o botão de fechar modal. [Best Practices for Modals / Overlays / Dialog Windows](https://uxplanet.org/best-practices-for-modals-overlays-dialog-windows-c00c66cddd8c)
 Avatar com tamanho muito superior aos elementos do modal
 
 Estrutura de dados não correspondente com a API. Segundo a API um criminoso, possui um crime atrelado a ele. No layout essa visualização não acontece. Desta forma foi criado um lista de criminosos, com seus respectivos nomes e crime cometido.
@@ -80,4 +80,4 @@ Uma arma não está relacionada a um criminoso em si e sim ao crime em geral. De
 **Página novo crime**
 Reestruturação de campos, estrutura de dados não correspondente com a API. Deve ser claro ao usuário que um criminoso possui um tipo de crime atrelado a ele. Os campos devem estar no mesmo contexto. Campo de armas não faz parte da estrutura criminoso, ou seja, deve fazer parte de um contexto diferente.
 
-- **Formulário com scroll horizontal** - a rolagem horizontal não é natural para os usuários, enquanto a rolagem vertical é o que o usuário espera. Desta forma optei por criar duas colunas para aproveitamento melhor da página.  Utilizei este material de apoio [Designing More Efficient Forms: Structure, Inputs, Labels and Actions](https://uxplanet.org/designing-more-efficient-forms-structure-inputs-labels-and-actions-e3a47007114f)
+- **Formulário com scroll horizontal** - a rolagem horizontal não é natural para os usuários, enquanto a rolagem vertical é o que o usuário espera. Desta forma optei por criar duas colunas para o melhor aproveitamento da página.  Utilizei este material de apoio [Designing More Efficient Forms: Structure, Inputs, Labels and Actions](https://uxplanet.org/designing-more-efficient-forms-structure-inputs-labels-and-actions-e3a47007114f)
