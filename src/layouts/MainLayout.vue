@@ -1,18 +1,7 @@
 <script>
-import { mdiMenu } from '@quasar/extras/mdi-v5'
 
 export default {
-  name: 'MainLayout',
-
-  data () {
-    return {
-      mdiMenu: ''
-    }
-  },
-
-  created () {
-    this.mdiMenu = mdiMenu
-  }
+  name: 'MainLayout'
 }
 </script>
 
@@ -28,21 +17,20 @@ q-layout(view="hHh lpR fff")
       style="min-height:67px"
     )
       q-img(
-        src="../assets/logo.svg"
+        src="../assets/logo.png"
         width="114px"
         class="cursor-pointer"
         @click="$router.push('/')"
       )
 
-  q-page-container()
-    q-page(
-      class="row justify-center montserrat"
-      style="background-color: #F1F9FF"
-    )
+  q-page-container(style="padding-top: 43px; !important")
+    q-page(class="container")
       router-view
 
   q-footer(
+    elevated
     class="bg-primary"
+    style="min-height:60px"
   )
 
 </template>
