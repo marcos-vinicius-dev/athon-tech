@@ -11,7 +11,10 @@ export default {
 </script>
 
 <template lang="pug">
-div
+div(class="q-pa-md full-width")
+  h1(class="text-accent desktop-only q-mb-lg")
+    | New crime
+
   form-crime-create
 
 </template>
