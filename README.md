@@ -23,31 +23,31 @@ Sistemas de componentes utilizando a metodologia [Atomic Design](https://bradfro
 
 - src/
 
-- assets `recursos dinâmicos (processado pelo webpack)`
+	- assets `recursos dinâmicos (processado pelo webpack)`
 
-- boot `arquivos de inicialização`
+	- boot `arquivos de inicialização`
 
-- components/ `componentes do aplicativo`
+	- components/ `componentes do aplicativo`
 
-- api `componentes responsaveis pela comunicação com a api`
+	- api `componentes responsaveis pela comunicação com a api`
 
-- atoms `Atomic Design`
+	- atoms `Atomic Design`
 
-- molecules `Atomic Design`
+	- molecules `Atomic Design`
 
-- organisms `Atomic Design`
+	- organisms `Atomic Design`
 
-- css `definições de estilo (Scss)`
+	- css `definições de estilo (Scss)`
 
-- helpers `funções auxiliares`
+	- helpers `funções auxiliares`
 
-- layouts `elementos que envolvem o conteúdo da página`
+	- layouts `elementos que envolvem o conteúdo da página`
 
-- mixins `funcionalidade reutilizável`
+	- mixins `funcionalidade reutilizável`
 
-- pages `paginas da aplicação`
+	- pages `paginas da aplicação`
 
-- router `Rotas da aplicação - Vue Router`
+	- router `Rotas da aplicação - Vue Router`
 
 
 
@@ -126,9 +126,9 @@ Remoção do **Neomorfismo** dos botões e dos cards. Por apresentar alguns prob
 
 - **Visibilidade / Acessibilidade**
 
-- Botões não tem contraste suficiente na passagem dos estados (ex: hover), Telas com baixa qualidade ou baixo contraste esta diferença de estado não é visível.
+	- Botões não tem contraste suficiente na passagem dos estados (ex: hover), Telas com baixa qualidade ou baixo contraste esta diferença de estado não é visível.
 
-- Perde a capacidade da utilização de um **[Botão CTA — Call to Action](https://medium.com/tableless/botoes-em-ui-design-e8e8a7473747)**, que sua principal função é chamar atenção do usuário.
+	- Perde a capacidade da utilização de um **[Botão CTA — Call to Action](https://medium.com/tableless/botoes-em-ui-design-e8e8a7473747)**, que sua principal função é chamar atenção do usuário.
 
 **Home**
 - Search e filtros - Optei pela utilização de uma **Search Box Design**. Quando o usuário acessa a página sua atenção tende a se concentrar na caixa de pesquisa.
