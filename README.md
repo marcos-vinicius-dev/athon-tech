@@ -130,6 +130,8 @@ Remoção do **Neomorfismo** dos botões e dos cards. Por apresentar alguns prob
 **Home**
 - Search e filtros - Optei pela utilização de uma **Search Box Design**. Quando o usuário acessa a página sua atenção tende a se concentrar na caixa de pesquisa.
 
+- Order By - Foi movido para próximo da lista. Ser apresentado junto aos outros campos obrigaria inconscientemente o usuário a clicar no botão search, desta forma essa mudança facilita a ação da filtragem imediata, utilizando apenas um campo isolado para isso.
+
 **Detalhes do crime**
 
 - Botão de delete é apresentado onde costuma ser apresentado o botão de fechar modal. [Best Practices for Modals / Overlays / Dialog Windows](https://uxplanet.org/best-practices-for-modals-overlays-dialog-windows-c00c66cddd8c)
