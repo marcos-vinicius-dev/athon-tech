@@ -5,8 +5,33 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Index.vue') },
-      { path: '', component: () => import('pages/CrimeCreate.vue') },
-      { path: '', component: () => import('pages/CrimeDetails.vue') }
+      {
+        path: 'crimeCreate',
+        component: () => import('layouts/InternalLayout.vue'),
+        children: [
+          {
+            path: '',
+            name: 'CrimeCreate',
+            meta: {
+              title: 'Crime Create'
+            },
+            component: () => import('pages/CrimeCreate.vue')
+          }
+        ]
+      },
+      {
+        path: 'crimeDetails/:crimeId',
+        component: () => import('layouts/InternalLayout.vue'),
+        children: [
+          {
+            path: '',
+            meta: {
+              title: 'Crime Details'
+            },
+            component: () => import('pages/CrimeDetails.vue')
+          }
+        ]
+      }
     ]
   },
 
