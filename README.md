@@ -62,17 +62,14 @@ Sistemas de componentes utilizando a metodologia [Atomic Design](https://bradfro
 yarn install
 
 
-
 #Start the app in development mode (hot-code reloading, error reporting, etc.)
 
 quasar dev
 
 
-
 # Lint the files
 
 yarn run lint
-
 
 
 # Build the app for production
