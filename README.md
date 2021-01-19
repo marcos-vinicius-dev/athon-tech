@@ -61,3 +61,23 @@ Os **commits** do **Git** seguem as [mensagens de commit semântico](https://gis
  - [x] Adicionar um novo crime
  - [x] Remover um crime
  - [x] Utilização do componente Intersection para otimização da página e da lista de crimes
+
+# Altercações Layout - Motivos de mudança
+
+ Remoção do **Neomorfismo** dos botões e dos cards. Por apresentar alguns problemas.
+- **Visibilidade / Acessibilidade**
+	- Botões não tem contraste suficiente na passagem dos estados (ex: hover), Telas com baixa qualidade ou baixo contraste esta diferença de estado não é visível.
+	- Perde a capacidade da utilização de um **[Botão CTA — Call to Action](https://medium.com/tableless/botoes-em-ui-design-e8e8a7473747)**, que sua principal função é chamar atenção do usuário.
+
+**Detalhes do crime**
+Botão de delete é apresentado onde costuma seja apresentado o botão de fechar modal.
+Avatar com tamanho muito superior aos elementos do modal
+
+Estrutura de dados não correspondente com a API. Segundo a API um criminoso, possui um crime atrelado a ele. No layout essa visualização não acontece. Desta forma foi criado um lista de criminosos, com seus respectivos nomes e crime cometido.
+
+Uma arma não está relacionada a um criminoso em si e sim ao crime em geral. Desta forma foi criado uma lista para ser apresentas essas armas.
+
+**Página novo crime**
+Reestruturação de campos, estrutura de dados não correspondente com a API. Deve ser claro ao usuário que um criminoso possui um tipo de crime atrelado a ele. Os campos devem estar no mesmo contexto. Campo de armas não faz parte da estrutura criminoso, ou seja, deve fazer parte de um contexto diferente.
+
+- **Formulário com scroll horizontal** - a rolagem horizontal não é natural para os usuários, enquanto a rolagem vertical é o que o usuário espera. Desta forma optei por criar duas colunas para aproveitamento melhor da página.  Utilizei este material de apoio [Designing More Efficient Forms: Structure, Inputs, Labels and Actions](https://uxplanet.org/designing-more-efficient-forms-structure-inputs-labels-and-actions-e3a47007114f)
