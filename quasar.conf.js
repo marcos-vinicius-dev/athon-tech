@@ -20,6 +20,7 @@ module.exports = function (/* ctx */) {
     // https://quasar.dev/quasar-cli/boot-files
     boot: [
       'axios',
+      'vue-clipboard',
       'vee-validate'
     ],
 
@@ -44,7 +45,7 @@ module.exports = function (/* ctx */) {
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
-      vueRouterMode: 'history', // available values: 'hash', 'history'
+      vueRouterMode: 'hash', // available values: 'hash', 'history'
 
       // transpile: false,
 
@@ -84,9 +85,20 @@ module.exports = function (/* ctx */) {
       open: true, // opens browser window automatically
       proxy: [
         {
-          context: ['/'],
+          context: ['/rest'],
           target: 'https://athon-tech-ps.herokuapp.com/',
-          changeOrigin: true
+          changeOrigin: true,
+          pathRewrite: {
+            '^/rest': ''
+          }
+        },
+        {
+          path: '/avatar',
+          target: 'https://i.pravatar.cc',
+          changeOrigin: true,
+          pathRewrite: {
+            '^/avatar': ''
+          }
         }
       ]
     },
@@ -110,7 +122,10 @@ module.exports = function (/* ctx */) {
       // directives: [],
 
       // Quasar plugins
-      plugins: ['Notify']
+      plugins: [
+        'Meta',
+        'Notify'
+      ]
     },
 
     // animations: 'all', // --- includes all animations
