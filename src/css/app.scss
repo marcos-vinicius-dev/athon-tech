@@ -32,22 +32,3 @@ h1 {
   margin-inline-start: 0px;
   text-align: left;
 }
-
-.modal-wrapper {
-  display: flex;
-}
-
-.overlay {
-  background: rgba(0, 0, 0, 0.5);
-  transition: opacity 150ms ease;
-}
-
-.modal {
-  overflow: hidden;
-  position: relative;
-  margin: auto;
-  width: 90vw;
-  height: 10vh;
-  max-width: 500px;
-  background: #fff;
-}
